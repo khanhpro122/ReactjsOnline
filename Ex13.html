@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid green;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color:green; text-align:center;">Đăng kí du lịch</h3>
+    <table>
+        <tr>
+            <th>Họ và tên</th>
+            <th style="text-align: left;">
+                <input type="text" placeholder="Ngô Thục Đạt">
+            </th>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <th style="text-align: left;"> 
+                <input type="text" placeholder="2 Hùng Vương, Q10">
+            </th>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <th style="text-align: left;">
+                <input type="text" placeholder="325457564">
+            </th>
+        </tr>
+        <tr>
+            <th>Khách hàng Việt Nam</th>
+            <th style="text-align: left;">
+                <input type="checkbox" placeholder="325457564">
+            </th>
+        </tr>
+        <tr>
+            <th>Chọn tour</th>
+            <th style="text-align: left;">
+                <select name="" id="">
+                    <optgroup label="Miên Bắc">
+                        <option value="3" checked>Nha trang-đà lạt</option>
+                        <option value="4">Buôn Mê Thuột -Gia lai- Kom tum</option>
+                    </optgroup>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>Chọn phương tiện</th>
+            <th style="text-align: left;">
+                <input type="radio" value="Nam" name="gender">Máy bay
+                <input type="radio" value="Nữ" name="gender">Ô tô
+            </th>
+        </tr>
+        <tr>
+            <th>Ghi chú thêm</th>
+            <th style="text-align: left;">
+                <div style="border: 1px solid #000;width:200px;padding-left: 20px;">
+                    <h6 style="margin: 0;font-size:12px">Chọn sản phẩm tham gia</h6>
+                    <span style="font-size:12px">
+                        người lớn <input type="text" placeholder="6" style="width:20px">
+                    </span>
+                    <span style="font-size:12px">
+                        Trẻ em <input type="text" placeholder="4" style="width:20px">
+                    </span>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>Ghi chú thêm</th>
+            <th style="text-align: left;">
+                <textarea name=""placeholder="" style="width: 300px;"> Có 2 trẻ em dưới 6 tuổi                  Có 2 người ăn chay
+                </textarea>
+            </th>
+        </tr>
+        <tr>
+            <th>Số người tham dự</th>
+            <th style="text-align: left;">
+                <input name="" placeholder="2500" type="text"/>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input id ="btn" value="Đăng nhập" type="button" style="text-align: center;cursor: pointer;"/>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" style="color: red" id="inform">
+                
+            </th>
+        </tr>
+    </table>
+</body>
+<script>
+    const btn = document.getElementById('btn');
+    const inform = document.getElementById('inform')
+    btn.onclick = () => {
+        inform.innerHTML = ('Đăng ký thành công !!!')
+    }
+</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid green;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color:green">Phiếu đăng kí chương trình khuyến mãi</h3>
+    <table>
+        <tr>
+            <th>Họ và tên</th>
+            <th>
+                <input type="text" placeholder="Ngô Thục Đạt">
+            </th>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <th>
+                <input type="text" placeholder="2 Hùng Vương, Q10">
+            </th>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <th>
+                <input type="text" placeholder="325457564">
+            </th>
+        </tr>
+        <tr>
+            <th>Phái</th>
+            <th>
+                <input type="radio" value="Nam" name="gender">Nam
+                <input type="radio" value="Nữ" name="gender">Nữ
+            </th>
+        </tr>
+        <tr>
+            <th>Nghề nghiệp</th>
+            <th>
+                <select name="" id="">
+                    <option value="1">Nghề nghiệp</option>
+                    <option value="2">Giáo viên</option>
+                    <option value="3">Học sinh</option>
+                    <option value="4">Đầu bếp</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>Chọn sản phẩm tham gia</th>
+            <th>
+                <textarea name=""placeholder="ngày ản phẩm"></textarea>
+            </th>
+        </tr>
+        <tr>
+            <th>Số người tham dự</th>
+            <th>
+                <input name="" placeholder="2500" type="text"/>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input id ="btn" value="Đăng nhập" type="button" style="text-align: center;cursor: pointer;"/>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" style="color: red" id="inform">
+                
+            </th>
+        </tr>
+    </table>
+</body>
+<script>
+    const btn = document.getElementById('btn');
+    const inform = document.getElementById('inform')
+    btn.onclick = () => {
+        inform.innerHTML = ('Đăng ký thành công !!!')
+    }
+</script>
+</html>
